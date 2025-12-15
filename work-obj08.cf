@@ -1,0 +1,79 @@
+v 4
+file . "forwardingunit.vhd" "5ff373089933ad08d80d194c5600e15cfff27114" "20251209183438.795":
+  entity forwardingunit at 1( 0) + 0 on 2731;
+  architecture behavioral of forwardingunit at 33( 969) + 0 on 2732;
+file . "imem_p1.vhd" "7f5bbc77884055acddad67d83d8d008e5c627bca" "20251209183438.814":
+  entity imem at 1( 0) + 0 on 2733;
+  architecture behavioral of imem at 16( 460) + 0 on 2734;
+file . "registers.vhd" "41f07b0581d9679a92e5813211f85820d5739c31" "20251209183438.770":
+  entity registers at 1( 0) + 0 on 2713;
+  architecture behaveioral of registers at 22( 702) + 0 on 2714;
+file . "dmem.vhd" "235910e0972a5e6b2f68f80440b521d0a1981253" "20251209183438.769":
+  entity dmem at 1( 0) + 0 on 2711;
+  architecture behavioral of dmem at 23( 1065) + 0 on 2712;
+file . "cpucontrol.vhd" "ff5eca076ad8eeeffd50f58692841e1a1245b8a2" "20251209183438.767":
+  entity cpucontrol at 1( 0) + 0 on 2709;
+  architecture behavioral of cpucontrol at 21( 524) + 0 on 2710;
+file . "alucontrol.vhd" "a88730bae54068d170ce46ef792205566e56062b" "20251209183438.766":
+  entity alucontrol at 1( 0) + 0 on 2707;
+  architecture dataflow of alucontrol at 19( 810) + 0 on 2708;
+file . "alu.vhd" "e2c285f2995e34d946eaf2c4ff7c1e15c573611a" "20251209183438.765":
+  entity alu at 1( 0) + 0 on 2705;
+  architecture dataflow of alu at 20( 656) + 0 on 2706;
+file . "signextend.vhd" "0e395062d9610f547d7136bec0b3bfe1cd8df28d" "20251209183438.730":
+  entity signextend at 1( 0) + 0 on 2699;
+  architecture behavioral of signextend at 10( 205) + 0 on 2700;
+file . "shiftleft2.vhd" "2a1b43d1a8623c693cba630d97cdca82a4224dae" "20251209183438.729":
+  entity shiftleft2 at 1( 0) + 0 on 2697;
+  architecture dataflow of shiftleft2 at 12( 244) + 0 on 2698;
+file . "pc.vhd" "676ceb65276aa9b69d33cd6d7be5549b3b497963" "20251209183438.728":
+  entity pc at 1( 0) + 0 on 2695;
+  architecture behavioral of pc at 15( 541) + 0 on 2696;
+file . "mux64.vhd" "dee43a27c8682165610c9b780a0ab66a740b457d" "20251209183438.727":
+  entity mux64 at 1( 0) + 0 on 2693;
+  architecture dataflow of mux64 at 14( 366) + 0 on 2694;
+file . "mux5.vhd" "4fa98c9105d714f907a679da548146c51c930d64" "20251209183438.725":
+  entity mux5 at 1( 0) + 0 on 2691;
+  architecture dataflow of mux5 at 14( 360) + 0 on 2692;
+file . "mux.vhd" "69b4564d997eec6ec17d6e16d47a45f00a75ff74" "20251209183438.724":
+  entity mux at 1( 0) + 0 on 2689;
+  architecture dataflow of mux at 14( 301) + 0 on 2690;
+file . "alumux3.vhd" "a4181f4a97604a263fb8598637403431509b837e" "20251209183438.723":
+  entity alu_mux3 at 1( 0) + 0 on 2687;
+  architecture behavioral of alu_mux3 at 15( 383) + 0 on 2688;
+file . "add1.vhd" "b8f021bb124a18f653ba4ff7c05b6adb78cec711" "20251209183438.746":
+  entity add1 at 1( 0) + 0 on 2701;
+  architecture dataflow of add1 at 19( 369) + 0 on 2702;
+file . "add.vhd" "42451126c751deccd2973d09a4830c00a309ea99" "20251209183438.747":
+  entity add at 1( 0) + 0 on 2703;
+  architecture structural of add at 23( 686) + 0 on 2704;
+file . "IF_ID_reg.vhd" "34ee424a047e18e177a4916a9140641be29cdf00" "20251209183438.787":
+  entity if_id_reg at 1( 0) + 0 on 2715;
+  architecture behavioral of if_id_reg at 17( 409) + 0 on 2716;
+file . "ID_EX_reg.vhd" "9ee86e2b291506781f82ba81a01e1e8af8afcdb1" "20251209183438.788":
+  entity id_ex_reg at 1( 0) + 0 on 2717;
+  architecture behavioral of id_ex_reg at 55( 1708) + 0 on 2718;
+file . "EX_MEM_reg.vhd" "b644b1e97b886d024c8d3fb710744040562b437d" "20251209183438.789":
+  entity ex_mem_reg at 1( 0) + 0 on 2719;
+  architecture behavioral of ex_mem_reg at 42( 1216) + 0 on 2720;
+file . "MEM_WB_reg.vhd" "9c63d87b7c7e853218bc5e788937a761103d67bf" "20251209183438.790":
+  entity mem_wb_reg at 1( 0) + 0 on 2721;
+  architecture behavioral of mem_wb_reg at 28( 769) + 0 on 2722;
+file . "and2.vhd" "2e0af692624a375d9f41c93772f68efe879d66ef" "20251209183438.791":
+  entity and2 at 1( 0) + 0 on 2723;
+  architecture dataflow of and2 at 13( 210) + 0 on 2724;
+file . "LSL.vhd" "ad2af652903257021a9b5ceb43dca8caf1a6aabf" "20251209183438.792":
+  entity lsl at 1( 0) + 0 on 2725;
+  architecture dataflow of lsl at 13( 265) + 0 on 2726;
+file . "LSR.vhd" "f6f45531ba7eab8191a7970291ec5b410a0ba0d4" "20251209183438.793":
+  entity lsr at 1( 0) + 0 on 2727;
+  architecture dataflow of lsr at 13( 265) + 0 on 2728;
+file . "hazardunit.vhd" "abd0f34ef2ae3fe6b4a935920e1a17e45d38feaa" "20251209183438.793":
+  entity hazardunit at 1( 0) + 0 on 2729;
+  architecture behavioral of hazardunit at 21( 557) + 0 on 2730;
+file . "pipelinedcpu1.vhd" "93581e100e4a313d9aa12b845e1f0c70029aa71e" "20251209183438.845":
+  entity pipelinedcpu1 at 1( 0) + 0 on 2735;
+  architecture behavioral of pipelinedcpu1 at 26( 802) + 0 on 2736;
+file . "pipecpu1_tb.vhd" "123eedc7e4a36acd12069fd1a3cc2dedd0fbdd3b" "20251209183438.845":
+  entity pipecpu_testbench at 1( 0) + 0 on 2737;
+  architecture structural of pipecpu_testbench at 12( 296) + 0 on 2738;
