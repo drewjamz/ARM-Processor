@@ -3,9 +3,9 @@ Pipelined version of an ARM processor that can detect control and data hazards
 
 OVERVIEW
 
-This project implements a 5-stage pipelined CPU in VHDL based on the ARM LEGv8 architecture. The processor extends a previously built pipelined design by adding hardware support for detecting and resolving data hazards using pipeline stalling and forwarding logic.
+This project implements a 5-stage pipelined CPU in VHDL based on the ARM LEGv8 architecture. The processor adds hardware support for detecting and resolving data hazards using pipeline stalling and forwarding logic.
 
-The design was developed and simulated using GHDL on the Tufts University servers, with waveform-based debugging performed using GTKWave.
+The design was developed and simulated using GHDL with waveform-based debugging performed using GTKWave.
 
 ------------------------------------------------------------
 
@@ -23,16 +23,13 @@ KEY FEATURES
 
 ARCHITECTURE SUMMARY
 
-The processor datapath closely follows the LEGv8 pipelined architecture presented in the course textbook (Figure 4.59), with additional hardware for hazard resolution.
+The processor datapath closely follows the LEGv8 pipelined architecture, with additional hardware for hazard resolution.
 
 Hazard Detection Unit
 Detects load-use hazards between the ID and EX stages and generates control signals to stall the pipeline by disabling PC and IF/ID writes.
 
 Forwarding Unit
 Resolves data hazards without stalling by forwarding results from later pipeline stages to earlier stages when required.
-
-Additional Multiplexers
-Used to select forwarded ALU operands and forwarded store data.
 
 Control hazard flushing for branches is not implemented in this version. Instructions following a taken branch are not squashed and will still execute.
 
@@ -64,7 +61,7 @@ Program 1 (p1)
 Program 2 (p2)
 - Tests conditional branching using CBNZ
 - Tests arithmetic forwarding chains
-- Demonstrates control hazards due to lack of branch flushing
+- Demonstrates control hazards
 
 ------------------------------------------------------------
 
@@ -77,9 +74,7 @@ Requirements
 
 To run the simulation:
 
-make
-ghdl -r pipecpu1_tb --wave=wave.ghw
-gtkwave wave.ghw
+make [p1/p2]
 
 To change programs, update the instruction memory file referenced in the Makefile.
 
@@ -98,10 +93,9 @@ KNOWN LIMITATIONS
 
 - No control hazard flushing
 - No branch prediction
-- Instructions after taken branches still execute
 - No performance metrics such as CPI
 
-These limitations are intentional and consistent with the scope of the lab assignment.
+These limitations are intentional and consistent with the scope of the assignment.
 
 ------------------------------------------------------------
 
